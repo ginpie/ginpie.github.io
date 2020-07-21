@@ -13,41 +13,116 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3614014b5d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <main></main>
-    <!-- side bar -->
-    <aside class="sidebar">
-      <div class="sidebar__card">
-        <a href="#" class="sidebar__portrait">
-          <div class="sidebar__portrait__avatar">
-            <img src="/assets/avatar.png" alt="avatar" class="avatar" />
+    <!-- body block -->
+    <main class="body-block">
+      <!-- side bar -->
+      <aside class="sidebar">
+        <div class="sidebar__card">
+          <a href="#" class="sidebar__portrait">
+            <div class="sidebar__portrait__avatar">
+              <img src="/assets/avatar.png" alt="avatar" class="avatar" />
+            </div>
+          </a>
+          <div class="sidebar__content">
+            <h1 class="sidebar__content__name">JP Chen</h1>
+            <h2 class="sidebar__content__description">
+              Full Stack Engineer, Web Developer
+            </h2>
           </div>
-        </a>
-        <div class="sidebar__content">
-          <h1 class="sidebar__content__name">JP Chen</h1>
-          <h2 class="sidebar__content__description">
-            Full Stack Engineer, Web Developer
-          </h2>
-        </div>
-        <div class="sidebar__navigation">
-          <!-- for small screen -->
-          <div class="navigation-extend"></div>
-          <!-- for large screen -->
-          <div class="navigation-list">
-            <ul>
-              <li class="portfolio"></li>
-              <li class="project"></li>
-              <li class="blog"></li>
-              <li class="contact"></li>
-            </ul>
+          <!-- side bar nav -->
+          <nav class="sidebar__navigation">
+            <!-- for small screen -->
+            <div class="navigation-extend"></div>
+            <!-- for large screen -->
+            <div class="navigation">
+              <ul class="navigation__list">
+                <li class="list__item list__portfolio">
+                  <a href="/portfolio/">Portfolio</a>
+                </li>
+                <li class="list__item list__project">
+                  <a href="/project/">Project</a>
+                </li>
+                <li class="list__item list__blog"><a href="/blog/">Blog</a></li>
+                <li class="list__item list__contact">
+                  <a href="/contact/">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- /side bar nav -->
+          <!-- side bar social media -->
+          <div class="sidebar__social">
+            <div class="social__title"><p class="findme">Find me</p></div>
+            <div class="social__icons">
+              <a
+                class="social__icon"
+                href="mailto:chenjpswe@gmail.com"
+                target="_blank"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a
+                class="social__icon"
+                href="https://github.com/ginpie"
+                target="_blank"
+              >
+                <i class="fab fa-github-square"></i>
+              </a>
+              <a
+                class="social__icon"
+                href="https://www.linkedin.com/in/jinpei-chen-31363b56/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                class="social__icon"
+                href="https://www.facebook.com/chenjp1989"
+                target="_blank"
+              >
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </div>
           </div>
+          <!-- side bar social media -->
         </div>
+      </aside>
+      <!-- /side bar -->
+      <!-- main page -->
+      <div class="main">
+        <h2 class="main__title">Hi, this is JP Chen,</h2>
+        <p class="main__intro">
+          A freelance software engineer specialized in
+          <b>front-end and back-end</b>.
+        </p>
       </div>
-    </aside>
-    <!-- /side bar -->
-    <!-- main page -->
-    <div class="main"></div>
-    <!-- /main page -->
+      <!-- /main page -->
+    </main>
+    <!-- body block -->
+    <div class="bg-acknowledge">
+      <span>
+        Photo by
+        <a
+          href="https://unsplash.com/@fezbot2000?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+          >Fezbot2000
+        </a>
+        on
+        <a
+          href="https://unsplash.com/s/photos/australia?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+        >
+          Unsplash
+        </a>
+      </span>
+    </div>
   </body>
 </html>
