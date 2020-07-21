@@ -1,0 +1,65 @@
+$font-family: "Work Sans", sans-serif;
+$font-color-sidebar: #fff;
+$font-size-sidebar: 15px;
+
+$avatar-bg: #b6b6b6;
+
+.sidebar {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  position: fixed;
+
+  background-image: url(/assets/sidebar-bg2.jpeg);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__card {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__portrait {
+    width: 50%;
+    height: 100px;
+    margin: 20px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__avatar {
+      width: 100%;
+      text-align: center;
+      .avatar {
+        width: 120px;
+        border-radius: 50%;
+        background-color: $avatar-bg;
+      }
+    }
+  }
+  &__content {
+    width: 100%;
+    color: $font-color-sidebar;
+    font-family: $font-family;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 50px;
+
+    &__name {
+      font-size: 25px;
+    }
+
+    &__description {
+      width: 80%;
+      font-size: 20px;
+      margin: auto;
+    }
+  }
+}
