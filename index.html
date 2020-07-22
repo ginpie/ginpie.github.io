@@ -10,11 +10,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oxygen&family=Quicksand:wght@600&family=Work+Sans&display=swap"
       rel="stylesheet"
     />
     <script
@@ -28,9 +24,9 @@
       <!-- side bar -->
       <aside class="sidebar">
         <div class="sidebar__card">
-          <a href="#" class="sidebar__portrait">
+          <a href="" class="sidebar__portrait" id="portrait">
             <div class="sidebar__portrait__avatar">
-              <img src="/assets/avatar.png" alt="avatar" class="avatar" />
+              <img src="/assets/cp-portrait.jpg" alt="avatar" class="avatar" />
             </div>
           </a>
           <div class="sidebar__content">
@@ -46,15 +42,17 @@
             <!-- for large screen -->
             <div class="navigation">
               <ul class="navigation__list">
-                <li class="list__item list__portfolio">
-                  <a href="/portfolio/">Portfolio</a>
+                <li class="list__item list__portfolio" id="button-portfolio">
+                  Portfolio
                 </li>
-                <li class="list__item list__project">
-                  <a href="/project/">Project</a>
+                <li class="list__item list__project" id="button-project">
+                  Project
                 </li>
-                <li class="list__item list__blog"><a href="/blog/">Blog</a></li>
-                <li class="list__item list__contact">
-                  <a href="/contact/">Contact</a>
+                <li class="list__item list__blog" id="button-blog">
+                  Blog
+                </li>
+                <li class="list__item list__contact" id="button-contact">
+                  Contact
                 </li>
               </ul>
             </div>
@@ -98,15 +96,176 @@
         </div>
       </aside>
       <!-- /side bar -->
-      <!-- main page -->
-      <div class="main">
-        <h2 class="main__title">Hi, this is JP Chen,</h2>
-        <p class="main__intro">
-          A freelance software engineer specialized in
-          <b>front-end and back-end</b>.
-        </p>
+      <!-- content -->
+      <div class="content">
+        <!-- main -->
+        <section class="content-inner main" id="main">
+          <h3 class="main__title">Hi, this is JP Chen,</h3>
+          <p class="main__intro">
+            A freelance software engineer specialized in
+            <b>front-end and back-end</b>.
+          </p>
+        </section>
+        <!-- /main -->
+        <!-- portfolio -->
+        <section class="content-inner portfolio hidden" id="portfolio">
+          <h3 class="portfolio__title">Portfolio</h3>
+          <p class="portfolio__intro">
+            See my work below. Unless explicitly stated otherwise, all their
+            back-end and front-end parts were completely done by me.
+          </p>
+          <div class="portfolio__timeline">
+            <div class="timeline">
+              <div class="time">
+                <p class="time__text">Jul 2018 - Now</p>
+              </div>
+              <div class="event">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                eaque doloremque perferendis asperiores aliquid labore commodi
+                tempora nisi dolorem animi?
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="time">
+                <p class="time__text">Aug 2016 - Jun 2018</p>
+              </div>
+              <div class="event">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Temporibus dolorum incidunt atque numquam quos, dolorem ipsam
+                veniam ullam dolores. Quidem veniam libero sequi eaque
+                molestiae!
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="time">
+                <p class="time__text">May 2014 - Jul 2016</p>
+              </div>
+              <div class="event">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
+                libero esse recusandae, ducimus aliquid quasi cumque similique
+                eum! Nam, soluta fuga!
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="time">
+                <p class="time__text">Jan 2012 - Apr 2014</p>
+              </div>
+              <div class="event">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
+                libero esse recusandae, ducimus aliquid quasi cumque similique
+                eum! Nam, soluta fuga!
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /portfolio -->
+        <!-- project -->
+        <section class="content-inner project hidden" id="project">
+          <h3 class="project__title">Projects</h3>
+          <p class="project__intro">
+            See my work below. Unless explicitly stated otherwise, all their
+            back-end and front-end parts were completely done by me.
+          </p>
+          <div class="project-gallery">
+            <div class="project-gallery__card card1">
+              <div class="card-img img1">
+                <div class="card-layer">
+                  <h4 class="card-intro">Introduction</h4>
+                  <p class="card-tech">Technology</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-gallery__card card2">
+              <div class="card-img img2"><div class="card-layer"></div></div>
+            </div>
+            <div class="project-gallery__card card3">
+              <div class="card-img img3"><div class="card-layer"></div></div>
+            </div>
+            <div class="project-gallery__card card4">
+              <div class="card-img img4"><div class="card-layer"></div></div>
+            </div>
+            <div class="project-gallery__card card5">
+              <div class="card-img img5"><div class="card-layer"></div></div>
+            </div>
+            <div class="project-gallery__card card6">
+              <div class="card-img img6"><div class="card-layer"></div></div>
+            </div>
+          </div>
+        </section>
+        <!-- /project -->
+        <!-- blog -->
+        <section class="content-inner blog hidden" id="blog">
+          <h3 class="blog__title">Blog</h3>
+          <p class="blog__intro">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, sit
+            ea. Hic, ipsam minus repellat deleniti harum aperiam magni ipsum!
+          </p>
+        </section>
+        <!-- /blog -->
+        <!-- contact -->
+        <section class="content-inner contact hidden" id="contact">
+          <h3 class="contact__title">Contact</h3>
+          <p class="contact__intro">
+            I am available for hire and open to any ideas of cooperation.
+          </p>
+          <div class="contact-content">
+            <div class="contact-content__method">
+              <ul class="contact-list">
+                <li class="method__email">E-mail:</li>
+                <li class="method__linkedin">LinkedIn:</li>
+                <li class="method__Github">Github:</li>
+                <li class="method__Facebook">Facebook:</li>
+              </ul>
+            </div>
+            <div class="contact-content__detail">
+              <ul class="contact-list">
+                <li class="detail__email">
+                  <i class="fas fa-envelope"></i>
+                  <a
+                    class="detail__icon"
+                    href="mailto:chenjpswe@gmail.com"
+                    target="_blank"
+                  >
+                    chenjpswe@gmail.com
+                  </a>
+                </li>
+                <li class="detail__linkedin">
+                  <i class="fab fa-linkedin"></i>
+                  <a
+                    class="detail__icon"
+                    href="https://www.linkedin.com/in/jinpei-chen-31363b56/"
+                    target="_blank"
+                  >
+                    Jinpei Chen
+                  </a>
+                </li>
+                <li class="detail__Github">
+                  <i class="fab fa-github-square"></i>
+                  <a
+                    class="detail__icon"
+                    href="https://github.com/ginpie"
+                    target="_blank"
+                  >
+                    ginpie
+                  </a>
+                </li>
+                <li class="detail__Facebook">
+                  <i class="fab fa-facebook-square"></i>
+                  <a
+                    class="social__icon"
+                    href="https://www.facebook.com/chenjp1989"
+                    target="_blank"
+                  >
+                    Jinpei Chen
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- /contact -->
       </div>
-      <!-- /main page -->
+      <!-- content -->
     </main>
     <!-- body block -->
     <div class="bg-acknowledge">
@@ -124,5 +283,6 @@
         </a>
       </span>
     </div>
+    <script src="/js/main.js"></script>
   </body>
 </html>
