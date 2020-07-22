@@ -63,7 +63,7 @@ body {
 }
 .body-block .sidebar__content__description {
   width: 80%;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   font-size: 18px;
   margin: 10px auto;
 }
@@ -73,7 +73,7 @@ body {
 .body-block .sidebar__navigation .navigation {
   width: 100%;
   color: #fff;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
 }
 .body-block .sidebar__navigation .navigation__list {
   list-style-type: none;
@@ -99,10 +99,10 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
 }
 .body-block .sidebar__social .social__title {
-  font-family: "Oxygen", sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   color: #fff;
 }
 .body-block .sidebar__social .social__icons {
@@ -128,7 +128,7 @@ body {
   text-align: center;
 }
 .body-block .content {
-  font-family: "Oxygen", sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
 }
 .body-block .content .content-inner {
   width: 75%;
@@ -181,31 +181,34 @@ body {
 }
 .body-block .content .portfolio__timeline .timeline .time {
   width: 20%;
-  height: 100px;
+  min-height: 100px;
   display: block;
   text-align: right;
   padding: 0 10px;
-  border-right: solid #7a7a7a 1px;
   font-style: italic;
   color: #7a7a7a;
 }
-.body-block .content .portfolio__timeline .timeline .time::after {
-  content: " ";
-  width: 8px;
-  height: 8px;
+.body-block .content .portfolio__timeline .timeline .time__text {
+  margin: -7px 0;
+}
+.body-block .content .portfolio__timeline .timeline .separate {
+  min-height: 100px;
+  border-right: solid #7a7a7a 1px;
+}
+.body-block .content .portfolio__timeline .timeline .separate .dot {
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   background-color: #1561b8;
   display: block;
-  margin: -12px 0 0 143px;
-}
-.body-block .content .portfolio__timeline .timeline .time__text {
-  margin: -10px 0;
+  transform: translate(5px, 0);
 }
 .body-block .content .portfolio__timeline .timeline .event {
   width: 80%;
+  min-height: 100px;
   display: block;
   padding: 0 10px;
-  margin: -10px 0;
+  margin: -7px 0 0 10px;
 }
 .body-block .content .project {
   color: #303030;

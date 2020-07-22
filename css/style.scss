@@ -1,5 +1,6 @@
 $font-head: "Quicksand", sans-serif;
-$font-body: "Oxygen", sans-serif;
+// $font-body: "Oxygen", sans-serif;
+$font-body: "Roboto", Helvetica, sans-serif;
 $font-color-sidebar: #fff;
 $font-size-sidebar: 15px;
 $font-content: #303030;
@@ -224,34 +225,39 @@ body {
 
           .time {
             width: 20%;
-            height: 100px;
+            min-height: 100px;
             display: block;
             text-align: right;
             padding: 0 10px;
-            border-right: solid $back-color 1px;
+
             font-style: italic;
             color: $back-color;
 
-            &::after {
-              content: " ";
-              width: 8px;
-              height: 8px;
+            &__text {
+              margin: -7px 0;
+            }
+          }
+
+          .separate {
+            min-height: 100px;
+            border-right: solid $back-color 1px;
+
+            .dot {
+              width: 9px;
+              height: 9px;
               border-radius: 50%;
               background-color: $dot-color;
               display: block;
-              margin: -12px 0 0 143px;
-            }
-
-            &__text {
-              margin: -10px 0;
+              transform: translate(5px, 0);
             }
           }
 
           .event {
             width: 80%;
+            min-height: 100px;
             display: block;
             padding: 0 10px;
-            margin: -10px 0;
+            margin: -7px 0 0 10px;
           }
         }
       }
