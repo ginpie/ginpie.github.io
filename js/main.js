@@ -14,11 +14,15 @@ const portrait = document.querySelector("#portrait");
 const pages = document.querySelectorAll(".content-inner");
 
 function hideAll() {
-  pages.forEach(function (i) {
+  pages.forEach((i) => {
     if (!i.classList.contains("hidden")) {
       i.classList.add("hidden");
     }
   });
+}
+
+function showThis(obj) {
+  obj.classList.remove("hidden");
 }
 
 // page switch
@@ -29,12 +33,27 @@ portrait.addEventListener("click", function () {
 button_portfolio.addEventListener("click", () => {
   if (portfolio.classList.contains("hidden")) {
     hideAll();
-    portfolio.classList.remove("hidden");
+    showThis(portfolio);
   }
 });
 
-button_project.addEventListener("click", function () {});
+button_project.addEventListener("click", function () {
+  if (project.classList.contains("hidden")) {
+    hideAll();
+    showThis(project);
+  }
+});
 
-button_blog.addEventListener("click", function () {});
+button_blog.addEventListener("click", function () {
+  if (blog.classList.contains("hidden")) {
+    hideAll();
+    showThis(blog);
+  }
+});
 
-button_contact.addEventListener("click", function () {});
+button_contact.addEventListener("click", function () {
+  if (contact.classList.contains("hidden")) {
+    hideAll();
+    showThis(contact);
+  }
+});
