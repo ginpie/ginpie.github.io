@@ -2,13 +2,15 @@ $font-head: "Quicksand", sans-serif;
 // $font-body: "Oxygen", sans-serif;
 $font-body: "Roboto", Helvetica, sans-serif;
 $font-color-sidebar: #fff;
+$font-color-dark: rgba(190, 190, 190, 0.9);
 $font-size-sidebar: 15px;
-$font-content: #303030;
+$font-color-content: #303030;
 $text-shadow: #505050 2px 2px 5px;
+$box-shadow: #505050 3px 3px 5px;
 
 $avatar-bg: #b6b6b6;
 $list-hover-bg: rgba(144, 144, 144, 0.5);
-$alpha-bg: rgba(90, 90, 90, 0.5);
+$alpha-bg: rgba(90, 90, 90, 0.7);
 
 $icon-color: #f0fff0;
 $content-bg: rgba(255, 255, 255, 0.98);
@@ -24,7 +26,7 @@ body {
 }
 
 .body-block {
-  background: url(/assets/main-bg.jpg) center center;
+  background: url(/assets/main-bg4.jpg) center center;
   background-size: cover;
   height: 100vh;
 
@@ -164,6 +166,7 @@ body {
     }
   }
 
+  /* content starts here */
   .content {
     font-family: $font-body;
 
@@ -191,11 +194,43 @@ body {
           font-weight: bolder;
         }
       }
+
+      &__findmore {
+        display: flex;
+        width: 180px;
+        height: 40px;
+        border: 2px $icon-color solid;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 50px;
+        cursor: pointer;
+
+        box-shadow: $box-shadow;
+        background-color: $alpha-bg;
+      }
+
+      &__switch-bg {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+
+        i {
+          font-size: x-large;
+        }
+
+        &:hover i {
+          color: $font-color-dark;
+        }
+      }
     }
 
     .portfolio {
-      // display: none;
-      color: $font-content;
+      color: $font-color-content;
       background: $content-bg;
       transition: ease 1s;
       transition-property: top, bottom;
@@ -264,7 +299,7 @@ body {
     }
 
     .project {
-      color: $font-content;
+      color: $font-color-content;
       background: $content-bg;
 
       &__title {
@@ -279,20 +314,20 @@ body {
 
       .project-gallery {
         width: 85%;
-        height: auto;
+        height: 800px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 200px);
+        grid-template-rows: repeat(3, 1fr);
 
         margin: 30px 50px 50px;
+
+        a {
+          text-decoration: none;
+        }
 
         &__card {
           grid-auto-rows: auto;
           grid-auto-columns: auto;
-
-          &:hover {
-            // transform: translate(-2px, -2px);
-          }
 
           .card-img {
             width: 100%;
@@ -317,13 +352,52 @@ body {
               opacity: 0;
               transform: translate(0, -200px);
               color: $font-color-sidebar;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
 
               .card-intro {
-                margin: auto;
+                margin: 0 auto;
+                padding: 0 20px;
+                text-align: justify;
               }
 
               .card-tech {
-                margin: 0 auto;
+                margin: 0 auto 10px;
+              }
+
+              .card-icon {
+                font-size: xx-large;
+                margin: 0 auto 10px;
+
+                .fa-html5:hover .html5 {
+                  visibility: visible;
+                  transition-delay: 0.6s;
+                }
+
+                .fa-css3-alt:hover .css3 {
+                  visibility: visible;
+                  transition-delay: 0.6s;
+                }
+
+                .fa-js:hover .js {
+                  visibility: visible;
+                  transition-delay: 0.6s;
+                }
+
+                .tooltip {
+                  visibility: hidden;
+                  width: 50px;
+                  background-color: $back-color;
+                  color: $icon-color;
+                  font-size: 10px;
+                  text-align: center;
+                  border-radius: 6px;
+                  padding: 5px 0;
+
+                  position: absolute;
+                  transform: translate(-10px, -10px);
+                }
               }
             }
           }
@@ -351,7 +425,7 @@ body {
     }
 
     .blog {
-      color: $font-content;
+      color: $font-color-content;
       background: $content-bg;
 
       &__title {
@@ -366,7 +440,7 @@ body {
     }
 
     .contact {
-      color: $font-content;
+      color: $font-color-content;
       background: $content-bg;
 
       &__title {
