@@ -21,11 +21,19 @@ const portfolio = document.querySelector("#portfolio");
 const project = document.querySelector("#project");
 const blog = document.querySelector("#blog");
 const contact = document.querySelector("#contact");
+const menu = document.getElementById("menu");
 
 const button_portfolio = document.querySelector("#button-portfolio");
 const button_project = document.querySelector("#button-project");
 const button_blog = document.querySelector("#button-blog");
 const button_contact = document.querySelector("#button-contact");
+const button_portfolio_mobile = document.querySelector(
+  "#button-portfolio-mobile"
+);
+const button_project_mobile = document.querySelector("#button-project-mobile");
+const button_blog_mobile = document.querySelector("#button-blog-mobile");
+const button_contact_mobile = document.querySelector("#button-contact-mobile");
+const button_menu = document.querySelector("#button-menu");
 const button_findmore = document.querySelector("#button-findmore");
 const button_switchbg = document.querySelector("#button-switch-bg");
 
@@ -94,4 +102,55 @@ button_contact.addEventListener("click", function () {
 //background switch
 button_switchbg.addEventListener("click", function () {
   randBg();
+});
+
+// mobile menu toggle
+function closeMenu() {
+  button_menu.classList.remove("open");
+  menu.classList.remove("pop");
+}
+function openMenu() {
+  button_menu.classList.add("open");
+  menu.classList.add("pop");
+}
+
+button_menu.addEventListener("click", function () {
+  if (button_menu.classList.contains("open")) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
+});
+
+// menu button page switch
+button_portfolio_mobile.addEventListener("click", () => {
+  if (portfolio.classList.contains("hidden")) {
+    hideAll();
+    showThis(portfolio);
+    closeMenu();
+  }
+});
+
+button_project_mobile.addEventListener("click", function () {
+  if (project.classList.contains("hidden")) {
+    hideAll();
+    showThis(project);
+    closeMenu();
+  }
+});
+
+button_blog_mobile.addEventListener("click", function () {
+  if (blog.classList.contains("hidden")) {
+    hideAll();
+    showThis(blog);
+    closeMenu();
+  }
+});
+
+button_contact_mobile.addEventListener("click", function () {
+  if (contact.classList.contains("hidden")) {
+    hideAll();
+    showThis(contact);
+    closeMenu();
+  }
 });
