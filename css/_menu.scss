@@ -1,5 +1,8 @@
+$font-body: "Roboto", Helvetica, sans-serif;
+
 $alpha-bg: rgba(90, 90, 90, 0.7);
 $alpha-bg-active: rgba(60, 60, 60, 0.7);
+$alpha-bg-dark: rgba(50, 50, 50, 0.9);
 $icon-color: #f0fff0;
 $text-shadow: #505050 2px 2px 5px;
 $box-shadow: #505050 3px 3px 5px;
@@ -9,19 +12,20 @@ $box-shadow: #505050 3px 3px 5px;
     &__menu-wrap {
       margin: 0 30px;
 
-      .button {
+      .menu-wrap__button-wrap {
         width: 43px;
         height: 39px;
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
 
         &:hover {
           background-color: $alpha-bg-active;
           border-radius: 3px;
         }
 
-        &__hamburger {
+        &__burger {
           width: 25px;
           height: 3px;
           background-color: $icon-color;
@@ -39,13 +43,68 @@ $box-shadow: #505050 3px 3px 5px;
             border-radius: 3px;
           }
           &::before {
-            transform: translate(0, -8px);
+            transform: translateY(-8px);
           }
           &::after {
-            transform: translate(0, 8px);
+            transform: translateY(8px);
           }
+        }
+      }
+
+      .menu {
+        width: 0;
+        height: calc(100% - 80px);
+        position: fixed;
+        top: 80px;
+        right: 0;
+        background-color: $alpha-bg;
+        z-index: 100;
+        text-align: center;
+        opacity: 0;
+
+        ul {
+          list-style: none;
+          font-family: $font-body;
+          color: $icon-color;
+          font-size: 20px;
+          line-height: 3;
+          margin: 30px auto;
+          padding: 0;
+        }
+        &__item:hover {
+          cursor: pointer;
+        }
+        &__item:hover {
+          background-color: $alpha-bg-dark;
         }
       }
     }
   }
+}
+
+.mobile-navbar__menu-wrap .menu.pop {
+  width: 320px;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+.open {
+  background-color: $alpha-bg-active;
+}
+
+.menu-wrap__button-wrap.open > .menu-wrap__button-wrap__burger {
+  transform: translateX(-30px);
+  background: transparent;
+  box-shadow: none;
+  transition: all 0.5s ease;
+}
+
+.menu-wrap__button-wrap.open .menu-wrap__button-wrap__burger::before {
+  transform: translateX(30px) rotate(45deg);
+  transition: all 0.5s ease;
+}
+
+.menu-wrap__button-wrap.open .menu-wrap__button-wrap__burger::after {
+  transform: translateX(30px) rotate(-45deg);
+  transition: all 0.5s ease;
 }
