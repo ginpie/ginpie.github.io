@@ -1,6 +1,21 @@
-const bgs = ["main-bg2.jpg", "main-bg3.jpg", "main-bg4.jpg", "main-bg5.jpg"];
+const bgs = [
+  "main-bg2.jpg",
+  "main-bg3.jpg",
+  "main-bg4.jpg",
+  "main-bg5.jpg",
+  "main-bg6.jpg",
+  "main-bg7.jpg",
+  "main-bg8.jpg",
+  "main-bg9.jpg",
+  "main-bg10.jpg",
+  "main-bg11.jpg",
+  "main-bg12.jpg",
+  "main-bg13.jpg",
+  "main-bg14.jpg",
+  "main-bg15.jpg",
+];
 
-const body = document.querySelector("#body-block");
+const body = document.getElementById("body-block");
 const main = document.querySelector("#main");
 const portfolio = document.querySelector("#portfolio");
 const project = document.querySelector("#project");
@@ -20,11 +35,10 @@ const pages = document.querySelectorAll(".content-inner");
 
 // background load
 function randBg() {
-  let bgrand = Math.floor(Math.random() * 4);
-  document.getElementById("body-block").style.backgroundImage =
-    "url(/assets/" + bgs[bgrand] + ")";
+  let bgrand = Math.floor(Math.random() * bgs.length);
+  body.style.backgroundImage = "url(/assets/" + bgs[bgrand] + ")";
+  body.style.transition = "1s ease linear";
 }
-randBg();
 
 // page switch
 function hideAll() {
