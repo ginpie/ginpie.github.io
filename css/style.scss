@@ -195,13 +195,20 @@ body {
       justify-content: space-between;
 
       &__social-icons {
-        margin-left: 30px;
+        margin-left: 5%;
+        width: 20%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
         a {
           text-decoration: none;
           color: $icon-color;
           font-size: x-large;
           opacity: 0.6;
-          margin: 0 5px;
+          margin: 0 3px;
+          display: block;
 
           &:hover {
             opacity: 1;
@@ -212,6 +219,12 @@ body {
       &__home {
         color: $icon-color;
         font-size: x-large;
+        position: absolute;
+        left: calc(50% - 13px);
+
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
   }
@@ -384,7 +397,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
 
-        margin: 30px 50px 50px;
+        margin: 30px 5% 30px;
 
         a {
           text-decoration: none;
