@@ -127,30 +127,30 @@ button_portfolio_mobile.addEventListener("click", () => {
   if (portfolio.classList.contains("hidden")) {
     hideAll();
     showThis(portfolio);
-    closeMenu();
   }
+  closeMenu();
 });
 
 button_project_mobile.addEventListener("click", function () {
   if (project.classList.contains("hidden")) {
     hideAll();
     showThis(project);
-    closeMenu();
   }
+  closeMenu();
 });
 
 button_blog_mobile.addEventListener("click", function () {
   if (blog.classList.contains("hidden")) {
     hideAll();
     showThis(blog);
-    closeMenu();
   }
+  closeMenu();
 });
 
 button_contact_mobile.addEventListener("click", function () {
   if (contact.classList.contains("hidden")) {
     hideAll();
     showThis(contact);
-    closeMenu();
   }
+  closeMenu();
 });
