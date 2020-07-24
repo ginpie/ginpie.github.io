@@ -1,0 +1,51 @@
+$alpha-bg: rgba(90, 90, 90, 0.7);
+$alpha-bg-active: rgba(60, 60, 60, 0.7);
+$icon-color: #f0fff0;
+$text-shadow: #505050 2px 2px 5px;
+$box-shadow: #505050 3px 3px 5px;
+
+.body-block {
+  .mobile-navbar {
+    &__menu-wrap {
+      margin: 0 30px;
+
+      .button {
+        width: 43px;
+        height: 39px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background-color: $alpha-bg-active;
+          border-radius: 3px;
+        }
+
+        &__hamburger {
+          width: 25px;
+          height: 3px;
+          background-color: $icon-color;
+          box-shadow: $box-shadow;
+          border-radius: 3px;
+
+          &::before,
+          &::after {
+            content: " ";
+            width: 25px;
+            height: 3px;
+            background-color: $icon-color;
+            box-shadow: $box-shadow;
+            position: absolute;
+            border-radius: 3px;
+          }
+          &::before {
+            transform: translate(0, -8px);
+          }
+          &::after {
+            transform: translate(0, 8px);
+          }
+        }
+      }
+    }
+  }
+}
