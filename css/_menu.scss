@@ -4,6 +4,7 @@ $alpha-bg: rgba(90, 90, 90, 0.7);
 $alpha-bg-active: rgba(60, 60, 60, 0.7);
 $alpha-bg-dark: rgba(50, 50, 50, 0.9);
 $icon-color: #f0fff0;
+$font-color-dark: #303030;
 $text-shadow: #505050 2px 2px 5px;
 $box-shadow: #505050 3px 3px 5px;
 
@@ -51,9 +52,26 @@ $box-shadow: #505050 3px 3px 5px;
         }
       }
 
+      .menu-wrap__button-wrap.open > .menu-wrap__button-wrap__burger {
+        transform: translateX(-30px);
+        background: transparent;
+        box-shadow: none;
+        transition: all 0.5s ease;
+      }
+
+      .menu-wrap__button-wrap.open .menu-wrap__button-wrap__burger::before {
+        transform: translateX(30px) rotate(45deg);
+        transition: all 0.5s ease;
+      }
+
+      .menu-wrap__button-wrap.open .menu-wrap__button-wrap__burger::after {
+        transform: translateX(30px) rotate(-45deg);
+        transition: all 0.5s ease;
+      }
+
       .menu {
         width: 0;
-        height: calc(100% - 80px);
+        height: 0;
         position: fixed;
         top: 80px;
         right: 0;
@@ -83,28 +101,13 @@ $box-shadow: #505050 3px 3px 5px;
 }
 
 .mobile-navbar__menu-wrap .menu.pop {
-  width: 320px;
+  width: 100%;
+  height: calc(100% - 80px);
+  border-top: 1px solid $font-color-dark;
   transition: all 0.5s ease;
   opacity: 1;
 }
 
 .open {
   background-color: $alpha-bg-active;
-}
-
-.menu-wrap__button-wrap.open > .menu-wrap__button-wrap__burger {
-  transform: translateX(-30px);
-  background: transparent;
-  box-shadow: none;
-  transition: all 0.5s ease;
-}
-
-.menu-wrap__button-wrap.open .menu-wrap__button-wrap__burger::before {
-  transform: translateX(30px) rotate(45deg);
-  transition: all 0.5s ease;
-}
-
-.menu-wrap__button-wrap.open .menu-wrap__button-wrap__burger::after {
-  transform: translateX(30px) rotate(-45deg);
-  transition: all 0.5s ease;
 }
