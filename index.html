@@ -24,17 +24,23 @@
       <!-- side bar -->
       <aside class="sidebar">
         <div class="sidebar__card">
-          <a href="" class="sidebar__portrait" id="portrait">
-            <div class="sidebar__portrait__avatar">
-              <img src="/assets/cp-portrait.jpg" alt="avatar" class="avatar" />
+          <a href="" id="portrait">
+            <div class="sidebar__portrait">
+              <div class="sidebar__portrait__avatar">
+                <img
+                  src="/assets/cp-portrait.jpg"
+                  alt="avatar"
+                  class="avatar"
+                />
+              </div>
+            </div>
+            <div class="sidebar__content">
+              <h1 class="sidebar__content__name">JP Chen</h1>
+              <h2 class="sidebar__content__description">
+                Full Stack Engineer, Web Developer
+              </h2>
             </div>
           </a>
-          <div class="sidebar__content">
-            <h1 class="sidebar__content__name">JP Chen</h1>
-            <h2 class="sidebar__content__description">
-              Full Stack Engineer, Web Developer
-            </h2>
-          </div>
           <!-- side bar nav -->
           <nav class="sidebar__navigation">
             <!-- for small screen -->
@@ -92,10 +98,56 @@
               </a>
             </div>
           </div>
-          <!-- side bar social media -->
+          <!-- /side bar social media -->
         </div>
       </aside>
       <!-- /side bar -->
+      <!-- mobile navbar -->
+      <header class="mobile-navbar">
+        <!-- social icons -->
+        <div class="mobile-navbar__social-icons">
+          <a
+            class="social__icon"
+            href="mailto:chenjpswe@gmail.com"
+            target="_blank"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            class="social__icon"
+            href="https://github.com/ginpie"
+            target="_blank"
+          >
+            <i class="fab fa-github-square"></i>
+          </a>
+          <a
+            class="social__icon"
+            href="https://www.linkedin.com/in/jinpei-chen-31363b56/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            class="social__icon"
+            href="https://www.facebook.com/chenjp1989"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-square"></i>
+          </a>
+        </div>
+        <!-- /social icons -->
+        <!-- home icon -->
+        <a class="mobile-navbar__home" href=""><i class="fas fa-home"></i></a>
+        <!-- /home icon -->
+        <!-- menu -->
+        <div class="mobile-navbar__menu-wrap">
+          <div class="button">
+            <div class="button__hamburger"></div>
+          </div>
+        </div>
+        <!-- /menu -->
+      </header>
+      <!-- /mobile navbar -->
       <!-- content -->
       <div class="content">
         <!-- main -->
@@ -197,17 +249,22 @@
                         and professional experience...
                       </h4>
                     </div>
-                    <div class="card-tech">Technology</div>
-                    <div class="card-icon">
-                      <i class="fab fa-html5">
-                        <span class="tooltip html5">HTML5</span>
-                      </i>
-                      <i class="fab fa-css3-alt">
-                        <span class="tooltip css3">CSS3</span>
-                      </i>
-                      <i class="fab fa-js">
-                        <span class="tooltip js">JavaScript</span>
-                      </i>
+                    <div class="card-tech">
+                      <div class="card-tech__text">Technology</div>
+                      <div class="card-tech__icon">
+                        <i class="fab fa-html5">
+                          <span class="tooltip html5">HTML5</span>
+                        </i>
+                        <i class="fab fa-css3-alt">
+                          <span class="tooltip css3">CSS3</span>
+                        </i>
+                        <i class="fab fa-js">
+                          <span class="tooltip js">JavaScript</span>
+                        </i>
+                        <i class="fab fa-sass">
+                          <span class="tooltip sass">SASS</span>
+                        </i>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -225,17 +282,22 @@
                         self-development...
                       </h4>
                     </div>
-                    <div class="card-tech">Technology</div>
-                    <div class="card-icon">
-                      <i class="fab fa-html5">
-                        <span class="tooltip html5">HTML5</span>
-                      </i>
-                      <i class="fab fa-css3-alt">
-                        <span class="tooltip css3">CSS3</span>
-                      </i>
-                      <i class="fab fa-js">
-                        <span class="tooltip js">JavaScript</span>
-                      </i>
+                    <div class="card-tech">
+                      <div class="card-tech__text">Technology</div>
+                      <div class="card-tech__icon">
+                        <i class="fab fa-html5">
+                          <span class="tooltip html5">HTML5</span>
+                        </i>
+                        <i class="fab fa-css3-alt">
+                          <span class="tooltip css3">CSS3</span>
+                        </i>
+                        <i class="fab fa-js">
+                          <span class="tooltip js">JavaScript</span>
+                        </i>
+                        <i class="fab fa-adobe">
+                          <span class="tooltip adobe">Adobe XD</span>
+                        </i>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -253,17 +315,22 @@
                         self-development...
                       </h4>
                     </div>
-                    <div class="card-tech">Technology</div>
-                    <div class="card-icon">
-                      <i class="fab fa-html5">
-                        <span class="tooltip html5">HTML5</span>
-                      </i>
-                      <i class="fab fa-css3-alt">
-                        <span class="tooltip css3">CSS3</span>
-                      </i>
-                      <i class="fab fa-js">
-                        <span class="tooltip js">JavaScript</span>
-                      </i>
+                    <div class="card-tech">
+                      <div class="card-tech__text">Technology</div>
+                      <div class="card-tech__icon">
+                        <i class="fab fa-html5">
+                          <span class="tooltip html5">HTML5</span>
+                        </i>
+                        <i class="fab fa-css3-alt">
+                          <span class="tooltip css3">CSS3</span>
+                        </i>
+                        <i class="fab fa-js">
+                          <span class="tooltip js">JavaScript</span>
+                        </i>
+                        <i class="fab fa-react">
+                          <span class="tooltip react">React</span>
+                        </i>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -281,17 +348,22 @@
                         self-development...
                       </h4>
                     </div>
-                    <div class="card-tech">Technology</div>
-                    <div class="card-icon">
-                      <i class="fab fa-html5">
-                        <span class="tooltip html5">HTML5</span>
-                      </i>
-                      <i class="fab fa-css3-alt">
-                        <span class="tooltip css3">CSS3</span>
-                      </i>
-                      <i class="fab fa-js">
-                        <span class="tooltip js">JavaScript</span>
-                      </i>
+                    <div class="card-tech">
+                      <div class="card-tech__text">Technology</div>
+                      <div class="card-tech__icon">
+                        <i class="fab fa-html5">
+                          <span class="tooltip html5">HTML5</span>
+                        </i>
+                        <i class="fab fa-css3-alt">
+                          <span class="tooltip css3">CSS3</span>
+                        </i>
+                        <i class="fab fa-js">
+                          <span class="tooltip js">JavaScript</span>
+                        </i>
+                        <i class="fab fa-bootstrap">
+                          <span class="tooltip bootstrap">Bootstrap</span>
+                        </i>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -309,17 +381,22 @@
                         self-development...
                       </h4>
                     </div>
-                    <div class="card-tech">Technology</div>
-                    <div class="card-icon">
-                      <i class="fab fa-html5">
-                        <span class="tooltip html5">HTML5</span>
-                      </i>
-                      <i class="fab fa-css3-alt">
-                        <span class="tooltip css3">CSS3</span>
-                      </i>
-                      <i class="fab fa-js">
-                        <span class="tooltip js">JavaScript</span>
-                      </i>
+                    <div class="card-tech">
+                      <div class="card-tech__text">Technology</div>
+                      <div class="card-tech__icon">
+                        <i class="fab fa-html5">
+                          <span class="tooltip html5">HTML5</span>
+                        </i>
+                        <i class="fab fa-css3-alt">
+                          <span class="tooltip css3">CSS3</span>
+                        </i>
+                        <i class="fab fa-js">
+                          <span class="tooltip js">JavaScript</span>
+                        </i>
+                        <i class="fab fa-aws">
+                          <span class="tooltip aws">Amazon AWS</span>
+                        </i>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -337,17 +414,22 @@
                         self-development...
                       </h4>
                     </div>
-                    <div class="card-tech">Technology</div>
-                    <div class="card-icon">
-                      <i class="fab fa-html5">
-                        <span class="tooltip html5">HTML5</span>
-                      </i>
-                      <i class="fab fa-css3-alt">
-                        <span class="tooltip css3">CSS3</span>
-                      </i>
-                      <i class="fab fa-js">
-                        <span class="tooltip js">JavaScript</span>
-                      </i>
+                    <div class="card-tech">
+                      <div class="card-tech__text">Technology</div>
+                      <div class="card-tech__icon">
+                        <i class="fab fa-html5">
+                          <span class="tooltip html5">HTML5</span>
+                        </i>
+                        <i class="fab fa-css3-alt">
+                          <span class="tooltip css3">CSS3</span>
+                        </i>
+                        <i class="fab fa-js">
+                          <span class="tooltip js">JavaScript</span>
+                        </i>
+                        <i class="fab fa-npm">
+                          <span class="tooltip npm">NPM</span>
+                        </i>
+                      </div>
                     </div>
                   </div>
                 </div>
