@@ -1,18 +1,18 @@
 const bgs = [
+  "main-bg.jpg",
+  "main-bg0.jpg",
+  "main-bg1.jpg",
   "main-bg2.jpg",
   "main-bg3.jpg",
   "main-bg4.jpg",
   "main-bg5.jpg",
-  "main-bg6.jpg",
   "main-bg7.jpg",
   "main-bg8.jpg",
-  "main-bg9.jpg",
   "main-bg10.jpg",
   "main-bg11.jpg",
   "main-bg12.jpg",
   "main-bg13.jpg",
   "main-bg14.jpg",
-  "main-bg15.jpg",
 ];
 
 const body = document.getElementById("body-block");
