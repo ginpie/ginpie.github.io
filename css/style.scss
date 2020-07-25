@@ -252,6 +252,7 @@ body {
       overflow: scroll;
     }
 
+    /* main page */
     .main {
       color: $font-color-sidebar;
       text-shadow: $text-shadow;
@@ -307,6 +308,7 @@ body {
       }
     }
 
+    /* portfolio page */
     .portfolio {
       color: $font-color-content;
       background: $content-bg;
@@ -334,7 +336,7 @@ body {
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
-          padding: 0 10px;
+          padding: 10px 10px;
 
           .time {
             width: 20%;
@@ -352,7 +354,9 @@ body {
           }
 
           .separate {
+            display: block;
             min-height: 100px;
+            height: 200px;
             border-right: solid $back-color 1px;
 
             .dot {
@@ -376,6 +380,7 @@ body {
       }
     }
 
+    /* project page */
     .project {
       color: $font-color-content;
       background: $content-bg;
@@ -529,6 +534,7 @@ body {
       }
     }
 
+    /* blog page */
     .blog {
       color: $font-color-content;
       background: $content-bg;
@@ -544,6 +550,7 @@ body {
       }
     }
 
+    /* contact page */
     .contact {
       color: $font-color-content;
       background: $content-bg;
@@ -560,21 +567,39 @@ body {
 
       &-content {
         width: 85%;
-        margin: auto;
+        margin: 30px 55px 50px;
         display: flex;
 
-        .contact-list {
-          list-style: none;
-          line-height: 2;
+        &__list {
+          width: 100%;
+          max-width: 300px;
           margin: 0;
+          padding: 0;
         }
 
-        &__method {
-          width: 20%;
-        }
+        &__list-item {
+          list-style: none;
+          line-height: 1.5;
+          margin: 15px 0;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          flex-wrap: wrap;
 
-        &__detail {
-          width: 50%;
+          &__method {
+            width: 80px;
+            margin: 0 20px 0 0;
+          }
+
+          &__detail {
+            display: flex;
+            align-items: center;
+            width: 200px;
+          }
+
+          .detail-link {
+            display: block;
+          }
         }
       }
     }
@@ -585,7 +610,7 @@ body {
   font-size: 10px;
   position: fixed;
   bottom: 0;
-  right: 0;
+  right: 50%;
   display: none;
 }
 
